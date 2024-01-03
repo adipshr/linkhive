@@ -1,3 +1,4 @@
+import { getServerSession } from "next-auth";
 import Link from "next/link";
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
         </div>
         <nav className="flex gap-4 text-sm ">
           <Link href={"/login"}>SignIn</Link>
-          <Link href={"/register"}>Create Account</Link>
+          <Link href={"/login"}>Create Account</Link>
         </nav>
       </div>
     </header>
